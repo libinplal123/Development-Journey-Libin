@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url("{{ url_for('static', filename='bg.jpg') }}");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            padding-top: 40px;         
+            color: white;
+            text-align: center
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <h1>Home Page</h1>
+        <p>This is the home page. I made this with Python, HTML and CSS</p>
+        <a href="/about" style="color:white;">Go to About</a>
+    </div>
+</body>
+</html>
